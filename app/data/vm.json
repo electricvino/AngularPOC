@@ -1,0 +1,78 @@
+{
+  "Activities": [
+    {
+      "id" : "99",
+      "name": "On-Board Idle Reduction",
+      "EquipmentID" : "123123123",
+       "Make" : "Thermo King",
+       "Model" : "TriPac",
+       "ModelYear" : "2012",
+      "PerformingPartyID" : "",
+      "TotalLifetimeUsage" : "",
+      "UsagePercentPrimaryArea" : "",
+      "UsagePercentSecondaryArea" : "",
+      "AddUsageInfo" : "",
+      "OperationalChanges" : "",
+      "AdminComments" : ""
+    },
+    {
+      "id" : "1",
+      "name": "On-Board Idle Reduction",
+      "EquipmentID" : "1FUYSSZB6",
+       "Make" : "",
+       "Model" : "Thermoking TriPac",
+       "ModelYear" : "2011",
+      "PerformingPartyID" : "",
+      "TotalLifetimeUsage" : "",
+      "UsagePercentPrimaryArea" : "",
+      "UsagePercentSecondaryArea" : "",
+      "AddUsageInfo" : "",
+      "OperationalChanges" : "",
+      "AdminComments" : ""
+    }
+  ],
+  "Programs" :  [
+    {
+      "name" : "Blue Skyways Collaborative Clean School Bus Grant",
+      "id": "0"
+    },
+    {
+      "name" : "Blue Skyways Collaborative, Clean School Bus USA",
+      "id": "1"
+    }
+  ],
+  "ProjectDetails" :
+  {
+    "CompletedCommitment" : "40000",
+    "TotalCommitment" : "60000",
+    ReportingPeriodsInfo :
+    [
+      {
+        "Period" : "1",
+        "Commited" : "20000",
+        "Actual" : "5000"
+      },
+      {
+        "Period" : "2",
+        "Commited" : "20000",
+        "Actual" : "33000"
+      },
+      {
+          "Period" : "3",
+          "Commited" : "20000",
+          "Actual" : "22000"
+      }
+    ]
+  },
+  "Issues" :  [
+    {
+      "Period" : "Q3 2015",
+      "Description" : "Broken Tailpipe"
+    },
+    {
+
+        "Period" : "Q1 2014",
+        "Description" : "Busted Manifold"
+    }
+  ]
+}
