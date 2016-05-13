@@ -3,12 +3,76 @@
   {
     "name" : "Blue Skyways Collaborative Clean School Bus Grant",
     "id": "0",
-    "status":"open"
+    "status":"open",
+    "Activities": [
+      {
+        "id" : "99",
+        "name": "On-Board Idle Reduction",
+        "EquipmentID" : "123123123",
+         "Make" : "Thermo King",
+         "Model" : "TriPac",
+         "ModelYear" : "2012",
+        "PerformingPartyID" : "",
+        "TotalLifetimeUsage" : "",
+        "UsagePercentPrimaryArea" : "",
+        "UsagePercentSecondaryArea" : "",
+        "AddUsageInfo" : "",
+        "OperationalChanges" : "",
+        "AdminComments" : ""
+      },
+      {
+        "id" : "1",
+        "name": "On-Board Idle Reduction",
+        "EquipmentID" : "1FUYSSZB6",
+         "Make" : "",
+         "Model" : "Thermoking TriPac",
+         "ModelYear" : "2011",
+        "PerformingPartyID" : "",
+        "TotalLifetimeUsage" : "",
+        "UsagePercentPrimaryArea" : "",
+        "UsagePercentSecondaryArea" : "",
+        "AddUsageInfo" : "",
+        "OperationalChanges" : "",
+        "AdminComments" : ""
+      }
+    ]
   },
   {
     "name" : "Blue Skyways Collaborative, Clean School Bus USA",
     "id": "1",
-    "status": "closed"
+    "status": "closed",
+    "Activities": [
+      {
+        "id" : "98",
+        "name": "On-Board Idle Reduction",
+        "EquipmentID" : "123123123",
+         "Make" : "Thermo King",
+         "Model" : "TriPac",
+         "ModelYear" : "2012",
+        "PerformingPartyID" : "",
+        "TotalLifetimeUsage" : "",
+        "UsagePercentPrimaryArea" : "",
+        "UsagePercentSecondaryArea" : "",
+        "AddUsageInfo" : "",
+        "OperationalChanges" : "",
+        "AdminComments" : ""
+      },
+      {
+        "id" : "2",
+        "name": "On-Board Idle Reduction",
+        "EquipmentID" : "1FUYSSZB6",
+         "Make" : "",
+         "Model" : "Thermoking TriPac",
+         "ModelYear" : "2011",
+        "PerformingPartyID" : "",
+        "TotalLifetimeUsage" : "",
+        "UsagePercentPrimaryArea" : "",
+        "UsagePercentSecondaryArea" : "",
+        "AddUsageInfo" : "",
+        "OperationalChanges" : "",
+        "AdminComments" : ""
+      }
+    ]
   }
 ],
   "SelectedProgram" :

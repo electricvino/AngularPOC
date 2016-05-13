@@ -1,1 +1,20 @@
-{{model | json}}
+<!-- {{model | json}} -->
+
+<div class="container">
+  <!-- <h2>{{model.SelectedProgram.name}}</h2> -->
+  <h2>Company Name</h2>
+  <ul class="nav nav-tabs">
+    <li  ng-repeat="program in model.Programs"><a data-toggle="tab" ng-click="selectProgram(program)">{{program.name}}</a></li>
+  </ul>
+</div>
+
+<div class="tab-content">
+  <div id="SelectedProgramInfo" class="tab-pane fade in active">
+    <!-- <h3>Activities</h3> -->
+    <div id="jsGrid"></div>
+    <!-- <ul>
+      <li ng-repeat="activity in model.SelectedProgram.Activities">{{activity.id}}: {{activity.name}}</li>
+    </ul> -->
+    <div ui-grid="{ data: model.SelectedProgram.Activities}" class="myGrid"></div>
+  </div>
+</div>
