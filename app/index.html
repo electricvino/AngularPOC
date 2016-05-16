@@ -23,6 +23,13 @@
   <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
   <script src="./release/ui-grid.js"></script>
   <script src="./release/ui-grid.css"></script>
+  <!-- <script src="app.css"></script> -->
+  <style>
+  .myGrid {
+    width: 1800px;
+    height: 150px;
+  }
+  </style>
   <script src="app.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
@@ -32,12 +39,7 @@
 
   <link rel="styleSheet" href="release/ui-grid.min.css"/>
   <script src="release/ui-grid.min.js"></script>
-  <style>
-    .myGrid {
-      width: 1500px;
-      height: 250px;
-    }
-  </style>
+
 </head>
 <body>
   <!-- <ul class="menu">
@@ -55,6 +57,11 @@
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
-
+<script>
+$("ul.nav-tabs a").click(function (e) {
+  e.preventDefault();  
+  $(this).tab('show');
+});
+</script>
 </body>
 </html>

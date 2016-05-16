@@ -1,4 +1,7 @@
-/* app css stylesheet */
+.myGrid {
+  width: 1800px;
+  height: 200px;
+}
 
 .menu {
   list-style: none;
@@ -28,3 +31,5 @@
   content: "";
   padding: 0;
 }
+
+/*My Edits*/

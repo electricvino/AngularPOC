@@ -40,7 +40,7 @@
   {
     "name" : "Blue Skyways Collaborative, Clean School Bus USA",
     "id": "1",
-    "status": "closed",
+    "status": "open",
     "Activities": [
       {
         "id" : "98",
@@ -60,6 +60,43 @@
       {
         "id" : "2",
         "name": "On-Board Idle Reduction",
+        "EquipmentID" : "1FUYSSZB6",
+         "Make" : "",
+         "Model" : "Thermoking TriPac",
+         "ModelYear" : "2011",
+        "PerformingPartyID" : "",
+        "TotalLifetimeUsage" : "",
+        "UsagePercentPrimaryArea" : "",
+        "UsagePercentSecondaryArea" : "",
+        "AddUsageInfo" : "",
+        "OperationalChanges" : "",
+        "AdminComments" : ""
+      }
+    ]
+  },
+  {
+    "name" : "Closed Test Subagreement",
+    "id": "33",
+    "status": "closed",
+    "Activities" : [
+      {
+        "id" : "98",
+        "name": "Closed Activity 1",
+        "EquipmentID" : "123123123",
+         "Make" : "Thermo King",
+         "Model" : "TriPac",
+         "ModelYear" : "2012",
+        "PerformingPartyID" : "",
+        "TotalLifetimeUsage" : "",
+        "UsagePercentPrimaryArea" : "",
+        "UsagePercentSecondaryArea" : "",
+        "AddUsageInfo" : "",
+        "OperationalChanges" : "",
+        "AdminComments" : ""
+      },
+      {
+        "id" : "2",
+        "name": "Closed Activity 2",
         "EquipmentID" : "1FUYSSZB6",
          "Make" : "",
          "Model" : "Thermoking TriPac",
