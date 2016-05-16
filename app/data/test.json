@@ -44,7 +44,7 @@
     "Activities": [
       {
         "id" : "98",
-        "name": "On-Board Idle Reduction",
+        "name": "Test activity 1",
         "EquipmentID" : "123123123",
          "Make" : "Thermo King",
          "Model" : "TriPac",
