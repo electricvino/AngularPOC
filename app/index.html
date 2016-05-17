@@ -72,25 +72,20 @@
       <a class="btn btn-primary">Save</a><br />
 
         <!-- Vertical Tabs -->
-        <ul class="nav nav-tabs nav-stacked col-md-3">
-            <li><a href="#/project" data-toggle="tab">Project Detail</a></li>
-            <li><a href="#/activity" data-toggle="tab">Activity Detail</a></li>
-            <li><a href="#/usage" data-toggle="tab">Usage History</a></li>
-            <li><a href="#/issues" data-toggle="tab">Issue Reporting</a></li>
-        </ul>
-        <div ng-view></div>
-        <!-- <div class="tab-content col-md-9">
-          <div class="tab-pane" id="projectdetail">Project Details go here!</div>
-          <div class="tab-pane" id="activitydetail">Acitivity Details go here!</div>
-          <div class="tab-pane" id="usage">Usage History goes here!</div>
-          <div class="tab-pane" id="issue">Issue Reporting goes here!</div>
-        </div> -->
-      <!-- </div> end tabs -->
-
-          <br />
+        <div class="row">
+          <div class="tabs-left">
+            <ul class="nav nav-tabs nav-stacked col-md-3">
+                <li><a href="#/project" data-toggle="tab">Project Detail</a></li>
+                <li><a href="#/activity" data-toggle="tab">Activity Detail</a></li>
+                <li><a href="#/usage" data-toggle="tab">Usage History</a></li>
+                <li><a href="#/issues" data-toggle="tab">Issue Reporting</a></li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div ng-view></div>
+          </div>
     </div>
-    <div class="row">
-    <!-- <div class="panel-group" id="accordion">
+    <div class="panel-group" id="accordion">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h4 class="panel-title">
@@ -114,12 +109,14 @@
         </div>
         <div id="collapse2" class="panel-collapse collapse">
           <div class="panel-body">
-            <em>Vehicle/Equipment ID</em> – Identification number of new vehicle/equipment/technology purchased with grant funds. (i.e. for on-road vehicle, input VIN;  for equipment, input serial number)
-            <em>Type of Vehicle/Equipment Outfitted</em> – For activities in which a grant-funded item (i.e. an APU), is installed on a vehicle/piece of equipment, this is the description of the vehicle/piece of equipment (i.e. the truck on which an APU is installed); only applicable to projects where a grant-funded piece of equipment is installed on something else
-            <em>ID of Vehicle/Equipment Outfitted</em> – For activities in which a grant-funded item (i.e. and APU), is installed on a vehicle/piece of equipment, this is the VIN or equipment ID number of the vehicle/piece of equipment (i.e. the truck on which an APU is installed); only applicable to projects where a grant-funded piece of equipment is installed on something else
-            <em>Performing Party ID</em> – A user assigned identification number for tracking purposes (i.e., fleet-assigned truck unit number)
-            <em>Activity Life (years)</em> – Number of years committed to operating vehicle/equipment/technology and reporting the usage
-            <em>Primary/Secondary Usage Factor</em> – Units used for reporting usage of the grant funded vehicle/equipment/technology (i.e. Fuel Use = gallons consumed, Mileage = miles driven, Hours = hours of operation)</div>
+            <ul>
+              <li><strong>Vehicle/Equipment ID</strong> – Identification number of new vehicle/equipment/technology purchased with grant funds. (i.e. for on-road vehicle, input VIN;  for equipment, input serial number)</li>
+              <li><strong>Type of Vehicle/Equipment Outfitted</strong> – For activities in which a grant-funded item (i.e. an APU), is installed on a vehicle/piece of equipment, this is the description of the vehicle/piece of equipment (i.e. the truck on which an APU is installed); only applicable to projects where a grant-funded piece of equipment is installed on something else</li>
+              <li><strong>ID of Vehicle/Equipment Outfitted</strong> – For activities in which a grant-funded item (i.e. and APU), is installed on a vehicle/piece of equipment, this is the VIN or equipment ID number of the vehicle/piece of equipment (i.e. the truck on which an APU is installed); only applicable to projects where a grant-funded piece of equipment is installed on something else</li>
+              <li><strong>Performing Party ID</strong> – A user assigned identification number for tracking purposes (i.e., fleet-assigned truck unit number)</li>
+              <li><strong>Activity Life (years)</strong> – Number of years committed to operating vehicle/equipment/technology and reporting the usage</li>
+              <li><strong>Primary/Secondary Usage Factor</strong> – Units used for reporting usage of the grant funded vehicle/equipment/technology (i.e. Fuel Use = gallons consumed, Mileage = miles driven, Hours = hours of operation)</div>
+            </ul>
         </div>
       </div>
       <div class="panel panel-default">
@@ -135,9 +132,10 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </div>
 
+ </div> <!--end of container -->
   <script>
   $("ul.panel a").click(function (e) {
     e.preventDefault();

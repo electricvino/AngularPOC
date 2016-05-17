@@ -1,31 +1,30 @@
-<div class="container-fluid">
-    <table class="table table-striped table-bordered" width="500px">
-      <tr>
-        <td height="75" width="120">
-          <canvas id="pie" class="chart chart-pie" chart-data="PieData" chart-labels="labels"></canvas>
-        </td>
-        <td>
-          Bar Chart goes here!
-        </td>
-      </tr>
-      <tr>
-        <td>Total Percent of Commitment Met to Date in Primary Area
-        </td>
-        <td>
-          {{model.SelectedProgram.TotalCommitmentCompleted/model.SelectedProgram.TotalCommitment * 100 | number : 0}} %
-        </td>
-      </tr>
-      <tr>
-        <td>Total Commitment Completed
-        </td>
-        <td>${{model.SelectedProgram.TotalCommitment | number : 0}}
-        </td>
-      </tr>
-      <tr>
-        <td>Remaining Commitment
-        </td>
-        <td>${{RemainingObligation | number : 0}}
-        </td>
-      </tr>
-    </table>
+<div class="container-fluid tab-pane" width="100%">
+  <table>
+    <tr>
+      <td>Bar Chart here
+      </td>
+      <td>
+        <canvas id="pie" class="chart chart-pie" chart-data="PieData" chart-labels="labels"></canvas>
+      </td>
+    </tr>
+    <tr>
+      <td>Total Percent of Commitment Met to Date in Primary Area
+      </td>
+      <td>
+        {{model.SelectedProgram.TotalCommitmentCompleted/model.SelectedProgram.TotalCommitment * 100 | number : 0}} %
+      </td>
+    </tr>
+    <tr>
+      <td>Total Commitment Completed
+      </td>
+      <td>${{model.SelectedProgram.TotalCommitment | number : 0}}
+      </td>
+    </tr>
+    <tr>
+      <td>Remaining Commitment
+      </td>
+      <td>${{RemainingObligation | number : 0}}
+      </td>
+    </tr>
+  </table>
 </div>

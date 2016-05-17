@@ -34,8 +34,8 @@ angular.module('usageApp', [
     enableFiltering: false,
     enableCellEditOnFocus: true,
     columnDefs: [
-      {name:'id', headerTooltip: 'This is where text from definitions can go!', enableCellEdit: false, width: '4%'},
-      {name: 'name', enableCellEdit: false, displayName: 'Name', width:'10%'},
+      {name:'id', headerTooltip: 'This is where text from definitions can go!', enableCellEdit: false, width: '2%'},
+      {name: 'name', enableCellEdit: false, displayName: 'Name', width:'9%'},
       {name: 'EquipmentID', enableCellEdit: false, displayName: 'Equipment ID', width:'10%'},
       {name: 'Make', enableCellEdit: false, width:'7%'},
       {name: 'Model', enableCellEdit: false, displayName: 'Model', width:'8%'},
