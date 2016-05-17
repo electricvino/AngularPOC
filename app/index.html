@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="usageApp" ng-controller="UsageCtrl"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,8 +31,12 @@
   }
   </style>
   <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
+  <script src="partials/project.js"></script>
+  <script src="partials/activity.js"></script>
+  <script src="partials/usage.js"></script>
+  <script src="partials/issues.js"></script>
+  <!-- <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script> -->
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
@@ -42,21 +46,48 @@
 
 </head>
 <body>
-  <!-- <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul> -->
+  <!-- {{model | json}} -->
+  <div class="container">
+    <h2>Company Name</h2>
+    <ul class="nav nav-pills">
+      <li ng-model="model.Programs.status" ng-repeat="program in model.Programs | filter: 'open'"><a data-toggle="pill" ng-click="selectProgram(program)">{{program.name}}</a></li>
+      <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Closed Projects <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <!-- <li>test</li> -->
+          <li ng-model="model.Programs.status" ng-repeat="program in model.Programs | filter: 'closed'"><a ng-click="selectProgram(program)">{{program.name}}</a></li>
+        </ul>
+      </li>
+    </ul>
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+    <div class="tab-content">
+      <!-- <div id="SelectedProgramInfo" class="tab-pane fade in active"> -->
+        <!-- <h3>Activities</h3> -->
+        <!-- <div id="jsGrid"></div> -->
+        <!-- <ul>
+          <li ng-repeat="activity in model.SelectedProgram.Activities">{{activity.id}}: {{activity.name}}</li>
+        </ul> -->
+        <div id="gridActivity" ui-grid="gridOptions" ui-grid-edit ui-grid-cellNav class="myGrid"></div>
+        <a class="btn btn-primary">Save</a><br />
 
-  <div ng-view></div>
+        <!-- Vertical Tabs -->
+        <ul class="nav nav-tabs nav-stacked col-md-3">
+            <li><a href="#/project" data-toggle="tab">Project Detail</a></li>
+            <li><a href="#/activity" data-toggle="tab">Activity Detail</a></li>
+            <li><a href="#/usage" data-toggle="tab">Usage History</a></li>
+            <li><a href="#/issues" data-toggle="tab">Issue Reporting</a></li>
+        </ul>
+        <div ng-view></div>
+        <!-- <div class="tab-content col-md-9">
+          <div class="tab-pane" id="projectdetail">Project Details go here!</div>
+          <div class="tab-pane" id="activitydetail">Acitivity Details go here!</div>
+          <div class="tab-pane" id="usage">Usage History goes here!</div>
+          <div class="tab-pane" id="issue">Issue Reporting goes here!</div>
+        </div> -->
+      <!-- </div> end tabs -->
+    </div>
 
-
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
+  </div>
 
 </body>
 </html>
