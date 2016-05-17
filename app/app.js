@@ -4,7 +4,8 @@
 angular.module('usageApp', [
   'ngRoute',
   'ngRoute', 'ngTouch', 'ui.grid', 'ui.grid.edit', 'ui.grid.cellNav',
-  'myApp.version', 'usageApp.Project', 'usageApp.Activity', 'usageApp.Issues', 'usageApp.Usage'
+  'myApp.version', 'usageApp.Project', 'usageApp.Activity', 'usageApp.Issues', 'usageApp.Usage',
+  'chart.js'
 ])
 .config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider

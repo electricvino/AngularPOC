@@ -35,7 +35,9 @@
         "OperationalChanges" : "",
         "AdminComments" : ""
       }
-    ]
+    ],
+    "TotalCommitment": "100000",
+    "TotalCommitmentCompleted": "60000"
   },
   {
     "name" : "Blue Skyways Collaborative, Clean School Bus USA",
@@ -72,7 +74,9 @@
         "OperationalChanges" : "",
         "AdminComments" : ""
       }
-    ]
+    ],
+    "TotalCommitment": "150000",
+    "TotalCommitmentCompleted": "70250"
   },
   {
     "name" : "Closed Test Subagreement",
@@ -109,7 +113,9 @@
         "OperationalChanges" : "",
         "AdminComments" : ""
       }
-    ]
+    ],
+    "TotalCommitment": "180000",
+    "TotalCommitmentCompleted": "200000"
   }
 ],
   "SelectedProgram" :

@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('usageApp.Activity', ['ngRoute'])
+angular.module('usageApp.Activity', ['ngRoute', ])
 
-.controller('ActivityCtrl', [function() {
+.controller('ActivityCtrl', ['$scope', '$http',function($scope, $http) {
 
 }]);
