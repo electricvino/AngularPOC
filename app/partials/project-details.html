@@ -1,8 +1,7 @@
 <div class="container-fluid">
-  <!-- <canvas id="pie" class="chart chart-pie" chart-data="data" chart-label="labels"></canvas> -->
-    <table class="table table-striped table-bordered">
+    <table class="table table-striped table-bordered" width="500px">
       <tr>
-        <td height="145" width="240">
+        <td height="75" width="120">
           <canvas id="pie" class="chart chart-pie" chart-data="PieData" chart-labels="labels"></canvas>
         </td>
         <td>
@@ -13,19 +12,19 @@
         <td>Total Percent of Commitment Met to Date in Primary Area
         </td>
         <td>
-          {{model.SelectedProgram.TotalCommitmentCompleted/model.SelectedProgram.TotalCommitment * 100 | number : 2}} %
+          {{model.SelectedProgram.TotalCommitmentCompleted/model.SelectedProgram.TotalCommitment * 100 | number : 0}} %
         </td>
       </tr>
       <tr>
         <td>Total Commitment Completed
         </td>
-        <td>{{model.SelectedProgram.TotalCommitment}}
+        <td>${{model.SelectedProgram.TotalCommitment | number : 0}}
         </td>
       </tr>
       <tr>
         <td>Remaining Commitment
         </td>
-        <td>{{RemainingObligation}}
+        <td>${{RemainingObligation | number : 0}}
         </td>
       </tr>
     </table>

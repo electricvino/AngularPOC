@@ -53,8 +53,9 @@
 </head>
 <body>
   <!-- {{model | json}} -->
-  <div class="container">
-    <h2>Company Name</h2>
+<div class="container">
+  <h2>Company Name</h2>
+
     <ul class="nav nav-pills">
       <li ng-model="model.Programs.status" ng-repeat="program in model.Programs | filter: 'open'"><a data-toggle="pill" ng-click="selectProgram(program)">{{program.name}}</a></li>
       <li role="presentation" class="dropdown">
@@ -66,15 +67,9 @@
       </li>
     </ul>
 
-    <div class="tab-content">
-      <!-- <div id="SelectedProgramInfo" class="tab-pane fade in active"> -->
-        <!-- <h3>Activities</h3> -->
-        <!-- <div id="jsGrid"></div> -->
-        <!-- <ul>
-          <li ng-repeat="activity in model.SelectedProgram.Activities">{{activity.id}}: {{activity.name}}</li>
-        </ul> -->
-        <div id="gridActivity" ui-grid="gridOptions" ui-grid-edit ui-grid-cellNav class="myGrid"></div>
-        <a class="btn btn-primary">Save</a><br />
+  <div class="tab-content">
+    <div id="gridActivity" ui-grid="gridOptions" ui-grid-edit ui-grid-cellNav class="myGrid"></div>
+      <a class="btn btn-primary">Save</a><br />
 
         <!-- Vertical Tabs -->
         <ul class="nav nav-tabs nav-stacked col-md-3">
@@ -91,11 +86,63 @@
           <div class="tab-pane" id="issue">Issue Reporting goes here!</div>
         </div> -->
       <!-- </div> end tabs -->
-    </div>
-    <!-- Pie Chart is here:
-      <canvas id="pie" class="chart chart-pie" chart-data="PieData" chart-labels="labels" height="285" width="570"></canvas> -->
 
+          <br />
+    </div>
+    <div class="row">
+    <!-- <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+            User Info</a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+            Definitions</a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">
+            <em>Vehicle/Equipment ID</em> – Identification number of new vehicle/equipment/technology purchased with grant funds. (i.e. for on-road vehicle, input VIN;  for equipment, input serial number)
+            <em>Type of Vehicle/Equipment Outfitted</em> – For activities in which a grant-funded item (i.e. an APU), is installed on a vehicle/piece of equipment, this is the description of the vehicle/piece of equipment (i.e. the truck on which an APU is installed); only applicable to projects where a grant-funded piece of equipment is installed on something else
+            <em>ID of Vehicle/Equipment Outfitted</em> – For activities in which a grant-funded item (i.e. and APU), is installed on a vehicle/piece of equipment, this is the VIN or equipment ID number of the vehicle/piece of equipment (i.e. the truck on which an APU is installed); only applicable to projects where a grant-funded piece of equipment is installed on something else
+            <em>Performing Party ID</em> – A user assigned identification number for tracking purposes (i.e., fleet-assigned truck unit number)
+            <em>Activity Life (years)</em> – Number of years committed to operating vehicle/equipment/technology and reporting the usage
+            <em>Primary/Secondary Usage Factor</em> – Units used for reporting usage of the grant funded vehicle/equipment/technology (i.e. Fuel Use = gallons consumed, Mileage = miles driven, Hours = hours of operation)</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+            FAQ</a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">
+            For questions: <a href="mailto:aqmogrants@nctcog.org">aqmogrants@nctcog.org</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
   </div>
 
+  <script>
+  $("ul.panel a").click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+  </script>
 </body>
 </html>

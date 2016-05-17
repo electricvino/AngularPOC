@@ -41,12 +41,14 @@ angular.module('usageApp', [
       {name: 'Model', enableCellEdit: false, displayName: 'Model', width:'8%'},
       {name: 'ModelYear', enableCellEdit: false, displayName: 'Model Yr', width:'5%'},
       {name: 'PerformingPartyID', headerTooltip: 'What do you call this activity?', displayName: 'Performing Party ID', width:'10%'},
-      {name: 'TotalLifetimeUsage', displayName: 'Total Lifetime Usage', width:'10%'},
+      {name: 'CurrentMeterReadingPrimary', displayName: 'Primary Meter Reading', width:'10%'},
+      {name: 'MeterDatePrimary', displayName: 'Primary Meter as of date', type: 'date', cellFilter: 'date:"MM/dd/yyyy"', width:'10%'},
+      {name: 'CurrentMeterReadingSecondary', displayName: 'Secondary Meter Reading', width:'10%'},
+      {name: 'MeterDateSecondary', displayName: 'Secondary Meter as of date', type: 'date', cellFilter: 'date:"MM/dd/yyyy"', width:'10%'},
       {name: 'UsagePercentPrimaryArea', displayName: 'Primary Area Usage (%)', width:'5%'},
       {name: 'UsagePercentSecondaryArea', displayName: 'Secondary Area Usage (%)', width:'5%'},
       {name: 'AddUsageInfo', displayName: 'More Usage Info', width:'6%'},
-      {name: 'OperationalChanges', displayName: 'Operational Changes', width:'10%'},
-      {name: 'AdminComments', displayName: 'Administrative Comments', width:'10%'}
+      {name: 'OperationalChanges', displayName: 'Operational Changes', width:'10%'}
     ],
     onRegisterApi: function( gridApi ) {
           $scope.gridApi = gridApi;
